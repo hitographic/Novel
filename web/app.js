@@ -88,10 +88,20 @@ function route() {
 }
 window.addEventListener("hashchange", route);
 
+/* ============ Data: API (server.py) atau file statis (GitHub Pages) ============ */
+async function apiOrStatic(apiPath, staticPath) {
+  try {
+    const r = await fetch(apiPath);
+    if (r.ok) return await r.json();
+  } catch { /* tidak ada API — pakai file statis */ }
+  const r = await fetch(staticPath);
+  if (!r.ok) throw new Error("static " + staticPath);
+  return r.json();
+}
+
 /* ============ Beranda ============ */
 async function loadToc() {
-  const r = await fetch("/api/toc");
-  toc = await r.json();
+  toc = await apiOrStatic("/api/toc", "data/toc.json");
 }
 
 function readCount() {
@@ -169,12 +179,15 @@ async function openChapter(n) {
   body.innerHTML = `<p class="para" style="text-align:center;color:var(--muted)">Memuat bab ${n}…</p>`;
   window.scrollTo(0, 0);
 
-  const src = settings.lang === "en" ? "?src=en" : "";
+  const en = settings.lang === "en";
+  const src = en ? "?src=en" : "";
+  const pad = String(n).padStart(3, "0");
   let data;
   try {
-    const r = await fetch(`/api/ch/${n}${src}`);
-    if (!r.ok) throw new Error("missing");
-    data = await r.json();
+    data = await apiOrStatic(
+      `/api/ch/${n}${src}`,
+      `data/${en ? "en" : "id"}/${pad}.json`
+    );
   } catch {
     body.innerHTML = "";
     missing.classList.remove("hidden");
@@ -282,8 +295,7 @@ async function loadGlossary() {
   if (glossaryCache) { box.innerHTML = glossaryCache; return; }
   box.innerHTML = `<p class="tiny">Memuat…</p>`;
   try {
-    const r = await fetch("/api/glossary");
-    const data = await r.json();
+    const data = await apiOrStatic("/api/glossary", "data/glossary.json");
     glossaryCache = data.terms
       .map(
         (t) => `<div class="gterm"><h4>${escapeHtml(t.id)}</h4>

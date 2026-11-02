@@ -1,0 +1,194 @@
+{
+ "terms": [
+  {
+   "key": "regression",
+   "id": "Regresi",
+   "note": "Keadaan ketika seseorang mundur kembali ke masa lalu (biasanya ke titik kematian) sambil membawa seluruh ingatan masa depannya. Di novel ini, itulah yang dialami tokoh utama."
+  },
+  {
+   "key": "regressor",
+   "id": "Regresor",
+   "note": "Orang yang mengalami Regresi, yaitu tokoh utama yang bisa kembali ke masa lalu berkali-kali."
+  },
+  {
+   "key": "spiritual-root",
+   "id": "Akar Spiritual",
+   "note": "Bakat bawaan sejak lahir yang menentukan apakah seseorang bisa merasakan energi spiritual. Tanpa Akar Spiritual, seseorang mustahil menjadi kultivator."
+  },
+  {
+   "key": "spiritual-energy",
+   "id": "Energi Spiritual",
+   "note": "Energi langit dan bumi (Qi) yang dihisap para kultivator untuk menguatkan diri. Semakin banyak energi spiritual suatu tempat, semakin bagus tempat itu untuk kultivasi."
+  },
+  {
+   "key": "cultivator",
+   "id": "Kultivator",
+   "note": "Orang yang mengolah (mengkultivasi) energi spiritual untuk mencapai kekuatan luar biasa dan akhirnya keabadian."
+  },
+  {
+   "key": "qi-refining",
+   "id": "Pemurnian Qi",
+   "note": "Tahap awal kultivasi: memurnikan dan menyalurkan Qi di dalam tubuh melalui meridian."
+  },
+  {
+   "key": "qi-building",
+   "id": "Pembangunan Qi",
+   "note": "Tahap kultivasi setelah Pemurnian Qi: membangun lautan Qi (dantian) di dalam tubuh. Kultivator tahap ini sudah dianggap kuat di dunia persilatan."
+  },
+  {
+   "key": "core-formation",
+   "id": "Formasi Inti",
+   "note": "Tahap kultivasi tingkat lanjut: energi spiritual memadat menjadi inti (core) di dalam tubuh. Kekuatannya jauh melampaui tahap Pembangunan Qi."
+  },
+  {
+   "key": "nascent-soul",
+   "id": "Jiwa Lahir",
+   "note": "Tahap kultivasi yang sangat tinggi: terbentuknya 'jiwa kedua' dari dalam inti. Kultivator tahap ini hampir mustahil dikalahkan."
+  },
+  {
+   "key": "spirit-stone",
+   "id": "Batu Roh",
+   "note": "Mata uang sekaligus bahan bakar para kultivator: batu berisi energi spiritual murni. Dipakai untuk membayar, mengaktifkan formasi, dan mempercepat kultivasi."
+  },
+  {
+   "key": "sect",
+   "id": "Sekte",
+   "note": "Perkumpulan atau organisasi para kultivator, mirip perguruan. Anggotanya belajar bersama di bawah naungan seorang master."
+  },
+  {
+   "key": "dao",
+   "id": "Dao",
+   "note": "Jalan atau prinsip hidup yang dipegang seorang kultivator (misalnya Dao Pedang, Dao Pertempuran). Makin jelas Dao seseorang, makin mudah ia maju."
+  },
+  {
+   "key": "qi",
+   "id": "Qi",
+   "note": "Energi kehidupan alam semesta, dasar dari semua kultivasi. Qi masuk lewat pernapasan dan disimpan di dalam tubuh."
+  },
+  {
+   "key": "understanding-before-breakthrough",
+   "id": "Pemahaman Sebelum Terobosan",
+   "note": "Filosofi kultivasi tokoh utama: menguasai suatu ilmu dengan mendalam sampai paham betul, baru naik tahap. Lawannya adalah 'Terobosan diikuti Pemahaman' yang mengandalkan bakat bawaan."
+  },
+  {
+   "key": "breakthrough",
+   "id": "Terobosan",
+   "note": "Kenaikan tahap kultivasi seseorang ke level berikutnya. Gagal Terobosan bisa membuat kultivasi mandek atau bahkan cedera."
+  },
+  {
+   "key": "gang-qi",
+   "id": "Gang Qi",
+   "note": "Energi bela diri murni milik ahli bela diri tingkat tinggi. Fungsi Gang Qi mirip Qi bagi kultivator, tetapi lahir dari latihan bela diri, bukan kultivasi."
+  },
+  {
+   "key": "gang-sphere",
+   "id": "Gang Sphere",
+   "note": "Serangan berupa bola energi Gang Qi yang dilontarkan dari jarak jauh."
+  },
+  {
+   "key": "mad-lord",
+   "id": "Tuan Gila",
+   "note": "Julukan seorang kultivator legendaris yang sangat kuat sekaligus mengerikan. Karyanya menjadi incaran semua orang di dunia kultivasi."
+  },
+  {
+   "key": "black-ghost-valley",
+   "id": "Lembah Hantu Hitam",
+   "note": "Faksi/kubu misterius di dunia kultivasi yang dikenal kejam. Semua orang segan menyebut namanya."
+  },
+  {
+   "key": "nether-crossing-ship",
+   "id": "Kapal Penyeberang Neraka",
+   "note": "Kapal ajaib legendaris yang bisa menembus ruang antar-dimensi untuk berpindah tempat jauh dalam sekejap."
+  },
+  {
+   "key": "serving-command-palace",
+   "id": "Istana Perintah",
+   "note": "Bangunan purba berisi harta dan rahasia kultivasi. Di dalamnya ada buah, formasi, dan jebakan peninggalan para kultivator lama."
+  },
+  {
+   "key": "longevity-fruit",
+   "id": "Buah Panjang Umur",
+   "note": "Buah ajaib yang jika dimakan bisa menambah umur pemakannya puluhan hingga ratusan tahun."
+  },
+  {
+   "key": "longevity-tree",
+   "id": "Pohon Panjang Umur",
+   "note": "Pohon yang menghasilkan Buah Panjang Umur. Sangat langka dan dijaga ketat."
+  },
+  {
+   "key": "heavenly-thunder",
+   "id": "Petir Surgawi",
+   "note": "Petir yang turun dari langit sebagai cobaan kultivasi. Banyak kultivator tewas menghadapinya, tetapi yang lolos justru jauh lebih kuat."
+  },
+  {
+   "key": "martial-artist",
+   "id": "Ahli Bela Diri",
+   "note": "Orang yang mengolah seni bela diri. Berbeda dengan kultivator, ahli bela diri mengandalkan latihan tubuh dan jurus, bukan Qi."
+  },
+  {
+   "key": "yin-energy",
+   "id": "Energi Yin",
+   "note": "Energi gelap dan dingin dalam keseimbangan yin-yang. Biasanya dipakai makhluk gaib atau kultivasi jalur gelap."
+  },
+  {
+   "key": "dragon-vein",
+   "id": "Urat Naga",
+   "note": "Garis energi bawah tanah yang mengalirkan Qi sebuah wilayah. Siapa yang menguasai Urat Naga, dialah yang menguasai tanah itu."
+  },
+  {
+   "key": "artifact",
+   "id": "Artefak",
+   "note": "Benda buatan kultivator yang berisi kekuatan, misalnya senjata ajaib, jimat, atau kapal terbang."
+  },
+  {
+   "key": "alchemy",
+   "id": "Alkimia",
+   "note": "Seni meracik pil dan obat ajaib dari tanaman serta mineral spiritual. Pil hasil Alkimia bisa mempercepat kultivasi atau menyembuhkan luka berat."
+  },
+  {
+   "key": "daoist",
+   "id": "Daois",
+   "note": "Sapaan hormat untuk para kultivator atau pengikut Dao, sering dipakai saat berbicara dengan orang lain sesama jalur kultivasi."
+  },
+  {
+   "key": "nine-prostrations",
+   "id": "Sembah Sembilan Kali",
+   "note": "Tradisi menghormati guru dengan bersujud/sembah sembilan kali, masing-masing dengan cara berbeda. Dilakukan sebagai ucapan terima kasih terakhir seorang murid."
+  },
+  {
+   "key": "pure-spiritual-force",
+   "id": "Kekuatan Spiritual Murni",
+   "note": "Bentuk paling murni dari energi spiritual yang dikendalikan kultivator Pembangunan Qi dan atas."
+  },
+  {
+   "key": "heart-demon",
+   "id": "Iblis Hati",
+   "note": "Gangguan batin berupa obsesi, takut, atau trauma yang menghalangi jalannya kultivasi seseorang."
+  },
+  {
+   "key": "immortal",
+   "id": "Abadi",
+   "note": "Gelar bagi kultivator yang sudah mencapai puncak dan tidak bisa mati. Dunia ini penuh orang yang berburu keabadian."
+  },
+  {
+   "key": "ascension",
+   "id": "Kenaikan ke Abadi",
+   "note": "Proses seorang kultivator naik ke alam yang lebih tinggi dan meninggalkan dunia fana. Impian semua kultivator."
+  },
+  {
+   "key": "meridian",
+   "id": "Meridian",
+   "note": "Jalur energi di dalam tubuh tempat Qi mengalir. Mirip pembuluh darah, tetapi untuk energi spiritual."
+  },
+  {
+   "key": "dantian",
+   "id": "Dantian",
+   "note": "Pusat penyimpanan Qi di dalam perut bawah. Semakin besar Dantian, semakin banyak Qi yang bisa ditampung."
+  },
+  {
+   "key": "talisman",
+   "id": "Jimat",
+   "note": "Kertas atau benda kecil bertulisan mantra yang jika diaktifkan memancarkan kekuatan tertentu, misalnya perlindungan atau serangan."
+  }
+ ]
+}
