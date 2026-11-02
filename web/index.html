@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12121c">
+<title>Kisah Sang Regresor — Terjemahan Indonesia</title>
+<script>
+/* terapkan tema tersimpan sebelum halaman dirender (anti kedip) */
+try {
+  var s = JSON.parse(localStorage.getItem("nr-settings") || "{}");
+  document.documentElement.dataset.theme = s.theme || "light";
+  document.documentElement.dataset.font = s.font || "serif";
+  var m = { s: ".95rem", m: "1.05rem", l: "1.2rem", xl: "1.4rem" };
+  document.documentElement.style.setProperty("--fs", m[s.fontSize] || m.m);
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================ BERANDA ============================ -->
+<div id="view-home" class="view">
+  <header class="hero">
+    <img class="cover" src="cover.jpg" alt="Sampul novel" onerror="this.style.display='none'">
+    <div class="hero-info">
+      <h1>Kisah Sang Regresor tentang Kultivasi</h1>
+      <p class="sub">A Regressor's Tale of Cultivation · NeverluckySMILE</p>
+      <p class="badge">Terjemahan Indonesia · Bab 1–100</p>
+      <div class="hero-actions">
+        <button id="btn-continue" class="primary hidden">▶ Lanjutkan Membaca</button>
+        <button id="btn-glossary" class="ghost">📖 Glosarium</button>
+        <button id="btn-info" class="ghost" title="Info koneksi">📱 Info Koneksi</button>
+      </div>
+      <div id="home-progress" class="home-progress hidden"></div>
+    </div>
+  </header>
+
+  <div class="toc-tools">
+    <input id="toc-search" type="search" placeholder="🔍 Cari bab…" autocomplete="off">
+  </div>
+
+  <ul id="chapter-list" class="chapter-list"></ul>
+
+  <footer class="foot">
+    <p>Dibaca secara lokal di perangkatmu. Terjemahan otomatis + glosarium istilah kultivasi.</p>
+    <p class="tiny">Novel adalah karya cipta penulis asli (NeverluckySMILE). Terjemahan ini untuk pemakaian pribadi.</p>
+  </footer>
+</div>
+
+<!-- ============================ PEMBACA ============================ -->
+<div id="view-reader" class="view hidden">
+  <div class="topbar">
+    <button id="btn-back" class="icon" aria-label="Kembali">←</button>
+    <span id="reader-title" class="topbar-title">…</span>
+    <button id="btn-settings" class="icon" aria-label="Pengaturan">Aa</button>
+  </div>
+  <div class="scroll-progress"><div id="scroll-progress-bar"></div></div>
+
+  <article id="chapter-body" class="chapter-body"></article>
+
+  <div id="chapter-missing" class="missing hidden">
+    <p>Terjemahan bab ini belum selesai diproses.</p>
+    <p class="tiny">Coba lagi beberapa saat lagi.</p>
+  </div>
+
+  <nav class="bottombar">
+    <button id="btn-prev" class="nav-btn">← Sebelumnya</button>
+    <span id="read-pos" class="read-pos">–</span>
+    <button id="btn-next" class="nav-btn">Berikutnya →</button>
+  </nav>
+</div>
+
+<!-- ============================ GLOSARIUM ============================ -->
+<div id="view-glossary" class="view hidden">
+  <div class="topbar">
+    <button id="btn-gback" class="icon" aria-label="Kembali">←</button>
+    <span class="topbar-title">Glosarium Istilah</span>
+    <span class="icon placeholder"></span>
+  </div>
+  <div class="glossary-intro">
+    <p>Istilah sulit yang sering muncul dalam novel. Penanda <span class="tn demo">?</span> di teks bisa diketuk untuk membuka keterangan.</p>
+  </div>
+  <div id="glossary-list" class="glossary-list"></div>
+</div>
+
+<!-- ============================ LEMBAR PENGATURAN ============================ -->
+<div id="sheet-settings" class="sheet hidden">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-panel">
+    <div class="sheet-grab"></div>
+    <h3>Pengaturan Membaca</h3>
+
+    <label class="row-label">Tema</label>
+    <div class="seg" data-setting="theme">
+      <button data-val="light">Terang</button>
+      <button data-val="dark">Gelap</button>
+      <button data-val="sepia">Sepia</button>
+    </div>
+
+    <label class="row-label">Ukuran Huruf</label>
+    <div class="seg" data-setting="fontSize">
+      <button data-val="s">Kecil</button>
+      <button data-val="m">Sedang</button>
+      <button data-val="l">Besar</button>
+      <button data-val="xl">Sangat Besar</button>
+    </div>
+
+    <label class="row-label">Jenis Huruf</label>
+    <div class="seg" data-setting="font">
+      <button data-val="serif">Serif</button>
+      <button data-val="sans">Sans</button>
+    </div>
+
+    <label class="row-label">Bahasa Teks</label>
+    <div class="seg" data-setting="lang">
+      <button data-val="id">Indonesia</button>
+      <button data-val="en">English (asli)</button>
+    </div>
+
+    <button class="sheet-close primary" data-close>Tutup</button>
+  </div>
+</div>
+
+<!-- ============================ LEMBAR ISTILAH ============================ -->
+<div id="sheet-term" class="sheet hidden">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-panel">
+    <div class="sheet-grab"></div>
+    <h3 id="term-title">Istilah</h3>
+    <p id="term-note"></p>
+    <button class="sheet-close primary" data-close>Tutup</button>
+  </div>
+</div>
+
+<!-- ============================ INFO KONEKSI ============================ -->
+<div id="sheet-info" class="sheet hidden">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-panel">
+    <div class="sheet-grab"></div>
+    <h3>Buka di HP</h3>
+    <p>Hubungkan HP ke <b>Wi-Fi yang sama</b> dengan komputer ini, lalu:</p>
+    <p class="conn-url" id="conn-url">…</p>
+    <img id="conn-qr" class="conn-qr" alt="QR koneksi" width="180" height="180">
+    <p class="tiny">Atau ketik alamat di atas di browser HP.</p>
+    <button class="sheet-close primary" data-close>Tutup</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
