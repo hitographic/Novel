@@ -51,11 +51,10 @@ Berhenti server: `Ctrl+C`.
 └── web/               tampilan (index.html, style.css, app.js)
 ```
 
-> **Catatan repo:** teks novel (`data/en`, `data/id`) dan sampul (`web/cover.jpg`)
-> tidak ikut diunggah karena merupakan materi berhak cipta. Setelah clone,
-> jalankan `scripts/fetch.py` lalu `scripts/translate.py` untuk menghasilkannya
-> sendiri secara lokal. Sampul opsional: unduh gambar sampul novel ke
-> `web/cover.jpg` (tanpa itu, tampilan tetap jalan tanpa gambar).
+> **Catatan repo:** repo ini **PRIVATE** dan seluruh isi novel (`data/en`,
+> `data/id`, sampul) ikut tersimpan sebagai **backup pribadi**.
+> ⚠️ **Jangan diubah ke publik** — teks novel adalah karya berhak cipta penulis
+> asli (NeverluckySMILE). Terjemahan ini untuk pemakaian pribadi saja.
 
 ## 🔄 Menambah / Memperbarui Chapter
 

@@ -1,10 +1,6 @@
-# Materi novel berhak cipta — jangan diunggah ke repo publik.
-# Jalankan scripts/fetch.py + scripts/translate.py untuk menghasilkannya sendiri.
-data/en/
-data/id/
-
-# Sampul buku milik penerbit (unduh manual ke web/cover.jpg — opsional)
-web/cover.jpg
+# Repo ini PRIVATE — data novel boleh ikut sebagai backup pribadi.
+# JANGAN pernah diubah ke publik: isi novel adalah karya berhak cipta
+# penulis asli (NeverluckySMILE) + terjemahan pribadi.
 
 .DS_Store
 __pycache__/
